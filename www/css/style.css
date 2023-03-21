@@ -1,2 +1,11 @@
 /**/
+form{
+    margin-top: 50%;
+    margin-bottom: 50%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
 
+.heading{
+  margin-bottom: 2em;
+}

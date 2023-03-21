@@ -4,14 +4,51 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: content: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+
     <script src="components/loader.js"></script>
+    <script src"bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src"components/loom.js"></script>
+
     <link rel="stylesheet" href="components/loader.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <script>
-    </script>
+
+    <title>Varmeiras</title>
 </head>
 <body>
-	<br />
-    This is a template for Monaca app.
+	<form>
+        <div class="mb-3">
+            <div class="row justify-content-md-center">
+            <h2 class="heading">Cálculo Estacionamento</h2>
+            </div>
+            <label for="basic-url" class="form-label">Placa do veículo</label>
+            <div class="input-group">
+                <input type="text" class="form-control" id="placa" placeholder="Ex: ABC1D11" aria-label="placa" aria-describedby="basic-addon1">
+            </div>
+            <br>
+            <label for="basic-url" class="form-label">Categoria</label>
+            <div class="input-group">
+                <select class="form-select" aria-label="Default select example">
+                  <option selected disabled hidden>Selecione</option>
+                  <option value="subcompacto">Subcompacto</option>
+                  <option value="compacto">Compacto</option>
+                  <option value="hatch">Hatch</option>
+                  <option value="sedan">Sedan</option>
+                  <option value="suv">SUV</option>
+                  <option value="pickUp">Pick-up</option>
+                </select> 
+            </div>
+            <br>
+            <label for="basic-url" class="form-label">Qtd de Horas</label>
+            <div class="input-group">
+                <input type="text" class="form-control" id="qHoras" placeholder="Ex: 2" aria-label="qHoras" aria-describedby="basic-addon1">
+                <span class="input-group-text" id="basic-addon3">h</span>
+            </div>
+            <br>
+            <div class="row justify-content-md-center">
+            <button type="button" class="btn btn-outline-dark" onclick="">Calcular</button>
+            </div>
+        </div>
+    </form>
 </body>
 </html>
