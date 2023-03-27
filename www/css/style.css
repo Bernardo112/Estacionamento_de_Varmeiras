@@ -1,11 +1,169 @@
-/**/
-form{
-    margin-top: 50%;
-    margin-bottom: 50%;
-    margin-left: 15%;
-    margin-right: 15%;
+body{
+    margin: 0;
+    font-family: sans-serif; 
 }
 
-.heading{
-  margin-bottom: 2em;
+.header{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 10%;
 }
+
+.header div img{
+  width: 130px;
+  margin-left: -20px;
+  position: static;
+}
+
+.header div p, h1{
+  font-size:23px;
+  font-family: 'Source Serif Pro', serif;
+  color: #AF2ADB;
+
+  margin-left:90px;
+  margin-top: -100px;
+  position: static;
+}
+
+.header div h1{
+    font-size:60px;
+}
+
+.header .second{
+    color: chartreuse;
+}
+
+.main{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.main .login{
+  margin-top: 60%;
+  position: static;
+  text-align: center;
+}
+
+.main .login #title{
+  font-size: 45px;
+  font-family: 'Exo 2', sans-serif;
+  color: chartreuse;
+  text-align: center;
+}
+
+.main .login input{
+  width: 250px;
+  margin-top: 10px;
+
+  border: 2px solid #AF2ADB ;
+  border-radius: 8px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+
+}
+
+.main .login #btn{
+    width: 180px;
+    margin-top: 20px;
+
+    border: 2px solid chartreuse ;
+    border-radius: 8px;
+    color: rgb(56, 53, 53);
+}
+
+.login #btn:hover{
+    background-color: chartreuse;
+    color: white;
+    border: none;
+
+    cursor: pointer;
+}
+
+.main .login a{
+  color: #AF2ADB;
+  text-decoration: none;
+  font-weight: 900;
+}
+
+.main .login p{
+  margin-top: 30px;
+}
+
+
+.main .cad{
+  margin-top: 60%;
+  position: static;
+  text-align: center;
+}
+
+.main .cad #title{
+  font-size: 45px;
+  font-family: 'Exo 2', sans-serif;
+  color: chartreuse;
+  text-align: center;
+}
+
+.main .cad input{
+  width: 250px;
+  margin-top: 10px;
+
+  border: 2px solid #AF2ADB ;
+  border-radius: 8px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+.main .cad #btn{
+    width: 180px;
+    margin-top: 20px;
+
+    border: 2px solid chartreuse ;
+}
+
+.cad #btn:hover{
+  background-color: chartreuse;
+  color: white;
+  border: none;
+
+  cursor: pointer;
+}
+
+.main .calculo{
+    margin-top: 60%;
+    position: static;
+}
+
+.main .calculo #title{
+  font-size: 45px;
+  font-family: 'Exo 2', sans-serif;
+  color: chartreuse;
+  padding-left: 25%;
+  padding-bottom: 20px;
+}
+
+.main .calculo input{
+  width: 250px;
+  margin-top: 10px;
+
+  border: 2px solid #AF2ADB;
+  border-radius: 8px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+.btn-outline{
+    --bs-btn-color: #AF2ADB;
+    --bs-btn-border-color: #AF2ADB;
+    --bs-btn-hover-color: var(--bs-white);
+    --bs-btn-hover-bg: #AF2ADB;
+    --bs-btn-active-color: #AF2ADB;
+}
+
