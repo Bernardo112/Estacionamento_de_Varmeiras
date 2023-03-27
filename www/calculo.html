@@ -47,12 +47,17 @@
             <br>
             <label for="basic-url" class="form-label" style="color: #AF2ADB;">Qtd de Horas</label>
             <div class="input-group">
-                <input type="text" class="form-control" id="qHoras" placeholder="Ex: 2" aria-label="qHoras" aria-describedby="basic-addon1">
+                <select class="form-select" aria-label="Default select example">
+                  <option selected disabled hidden>Selecione</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                </select> 
                 <span class="input-group-text" id="basic-addon3">h</span>
             </div>
             <br>
             <div class="row justify-content-md-center">
-            <button type="submit" class="btn btn-outline" onclick="contaEstacionamento(event)">Calcular</button>
+            <button type="submit" class="btn btn-outline" onclick="ContaEstacionamento()">Calcular</button>
             </div>
         </div>
     </form>

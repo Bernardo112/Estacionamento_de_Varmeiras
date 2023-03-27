@@ -1,19 +1,17 @@
 // This is a JavaScript file
 
-function contaEstacionamento(event){
+function ContaEstacionamento(){
     var placa = document.getElementById("placa");
     var categoria = document.getElementById("categoria");
     var qHoras = document.getElementById("qHoras");
 
-    document.getElementById("placa").innerHTML = "ABCD";
-
     alert("Placa inválida, tente novamente");
-    if(placa.length() > 7){
+    /*if(placa.length() > 7){
         alert("Placa inválida, tente novamente");
         document.getElementById("placa").innerHTML = "";
         document.getElementById("categoria").innerHTML = "";
         document.getElementById("qHoras").innerHTML = "";
-    }
+    }*/
 }
 
 function Login(event) {

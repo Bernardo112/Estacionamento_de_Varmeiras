@@ -135,8 +135,19 @@ body{
   cursor: pointer;
 }
 
-.main .calculo{
+.main .home{
     margin-top: 60%;
+    position: static;
+}
+
+.main .home h2{
+    font-family: 'Exo 2', sans-serif;
+    color: chartreuse;
+    text-align: center;
+}
+
+.main .calculo{
+    margin-top: 50%;
     position: static;
 }
 
