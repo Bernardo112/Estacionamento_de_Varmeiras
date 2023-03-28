@@ -48,8 +48,7 @@ function ContaEstacionamento(){
     if(resultado == ""){
         resultado = "O valor da compra do estacionamento para o carro de placa " + placa + " na categoria " + categoria + " é " + (qHoras * PrecoCategoria(categoria));
     }
-
-    document.getElementById("resultado").innerHTML = resultado;
+    alert(resultado);
     document.getElementById("botao").innerHTML = "Calcular novamente";
     document.getElementById("botao").onclick = "RestaurarCalculadora()";
 }
