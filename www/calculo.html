@@ -6,7 +6,7 @@
     <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: content: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
 
     <script src="components/loader.js"></script>
-    <script src"bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <link rel="stylesheet" href="components/loader.css">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
@@ -15,7 +15,7 @@
     <title>Varmeiras</title>
 </head>
 <body>
-<script src"components/loom.js"></script>
+<script src="components/loom.js"></script>
     <section class="header">
         <div>
             <img src="img/logo.png" alt="LOGO ESTACIONAMENTO">
@@ -24,17 +24,17 @@
     </section>
 
     <section class="main">
-	<form class="calculo" action="">
+	<form class="calculo">
         <label id="title">Cálculo</label> <br>
         <div class="mb-3">
             <label for="basic-url" class="form-label" style="color: #AF2ADB;">Placa do veículo</label>
             <div class="input-group">
-                <input type="text" class="form-control" id="placa" placeholder="Ex: ABC1D11" aria-label="placa" aria-describedby="basic-addon1">
+                <input type="text" class="form-control" id="placa" placeholder="Ex: ABC1111" aria-label="placa" aria-describedby="basic-addon1" required>
             </div>
             <br>
             <label for="basic-url" class="form-label" style="color: #AF2ADB;">Categoria</label>
             <div class="input-group">
-                <select class="form-select" aria-label="Default select example">
+                <select class="form-select" id="categoria" aria-label="Default select example">
                   <option selected disabled hidden>Selecione</option>
                   <option value="subcompacto">Subcompacto</option>
                   <option value="compacto">Compacto</option>
@@ -47,7 +47,7 @@
             <br>
             <label for="basic-url" class="form-label" style="color: #AF2ADB;">Qtd de Horas</label>
             <div class="input-group">
-                <select class="form-select" aria-label="Default select example">
+                <select class="form-select" id="qHoras" aria-label="Default select example">
                   <option selected disabled hidden>Selecione</option>
                   <option value="1">1</option>
                   <option value="2">2</option>
@@ -57,7 +57,11 @@
             </div>
             <br>
             <div class="row justify-content-md-center">
-            <button type="submit" class="btn btn-outline" onclick="ContaEstacionamento()">Calcular</button>
+            <button type="submit" id="botao" class="btn btn-outline" onclick="ContaEstacionamento()">Calcular</button>
+            </div>
+            <a href="home.html"><label class="link">Consultar a tabela</label></a>
+            <div class="row justify-content-md-center">
+            <p id="textoResultado">Resultado: <span id="resultado"></   span></p>
             </div>
         </div>
     </form>
